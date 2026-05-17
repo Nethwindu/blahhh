@@ -1,6 +1,7 @@
 <div align="center">
 
-https://capsule-render.vercel.app/api?type=venom&height=300&color=&color=e8ff47&text=AutoLane&reversal=false&fontColor=FFFFFF&descAlign=50&descAlignY=100
+<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=&color=e8ff47&text=AutoLane&reversal=false&fontColor=FFFFFF&descAlign=50&descAlignY=100" width="100%"/>
+
 
 <p>
   <img src="https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
