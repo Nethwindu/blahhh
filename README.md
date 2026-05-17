@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=0:0a0a0a,60:1c2600,100:DFFF00&text=AutoLane&reversal=false&fontColor=DFFF00&stroke=000000&strokeWidth=0&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=62&descSize=14" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=800&color=0:0a0a0a,60:1c2600,100:DFFF00&text=AutoLane&reversal=false&fontColor=DFFF00&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=60&descSize=-2" width="100%"/>
 
 <div align="center">
 
@@ -16,7 +16,7 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/SE1020-OOP_Project-DFFF00?style=flat-square&labelColor=111111"/>
+  <img src="https://img.shields.io/badge/SE1020-OOP_Project-DFFF00?style=flat-square&labelColor=111111&logoColor=111111"/>
   <img src="https://img.shields.io/badge/Architecture-Layered_REST_API-DFFF00?style=flat-square&labelColor=111111"/>
   <img src="https://img.shields.io/badge/Auth-Session_Based-DFFF00?style=flat-square&labelColor=111111"/>
   <img src="https://img.shields.io/badge/Frontend-Vanilla_JS_+_Bootstrap_5-DFFF00?style=flat-square&labelColor=111111"/>
@@ -33,11 +33,9 @@
 
 <div align="center">
 
-![](https://readme-typing-svg.demolab.com?font=Kanit&size=13&duration=1&pause=3000&color=DFFF00&width=600&lines=──────────────────────────────────────────────)
+### `// navigate`
 
 [`Team`](#team) &nbsp;`·`&nbsp; [`Setup`](#setup) &nbsp;`·`&nbsp; [`Architecture`](#architecture) &nbsp;`·`&nbsp; [`OOP Concepts`](#oop-concepts) &nbsp;`·`&nbsp; [`Database`](#database-schema) &nbsp;`·`&nbsp; [`API`](#api-reference) &nbsp;`·`&nbsp; [`Pages`](#pages)
-
-![](https://readme-typing-svg.demolab.com?font=Kanit&size=13&duration=1&pause=3000&color=DFFF00&width=600&lines=──────────────────────────────────────────────)
 
 </div>
 
@@ -147,7 +145,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 | `POST` | `/api/auth/login` | Login |
 | `GET` | `/api/auth/me` | Current user + role |
 
-**`SELLER`** — role: `SELLER` required
+**`SELLER`** — no auth required
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -182,13 +180,9 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 <div align="center">
 
-![](https://readme-typing-svg.demolab.com?font=Kanit&size=13&duration=1&pause=3000&color=DFFF00&width=600&lines=──────────────────────────────────────────────)
-
 <img src="https://img.shields.io/badge/SE1020-Object_Oriented_Programming-DFFF00?style=for-the-badge&labelColor=111111"/>
 
-<br/>
+<br/><br/>
 <sub>Java &nbsp;·&nbsp; Spring Boot &nbsp;·&nbsp; MySQL &nbsp;·&nbsp; Vanilla JS &nbsp;·&nbsp; Group 149</sub>
-
-![](https://readme-typing-svg.demolab.com?font=Kanit&size=13&duration=1&pause=3000&color=DFFF00&width=600&lines=──────────────────────────────────────────────)
 
 </div>
