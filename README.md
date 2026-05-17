@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=a1b800&text=AutoLane&reversal=false&fontColor=FFFFFF&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=60&descSize=20" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=a1b800&text=AutoLane&reversal=false&fontColor=FFFFFF&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=60&descSize=-2" width="100%"/>
 
 <div align="center">
 
@@ -35,13 +35,14 @@
 
 ### `// navigate`
 
-[`👥 Team`](#-team) &nbsp;`·`&nbsp; [`⚙️ Setup`](#️-setup) &nbsp;`·`&nbsp; [`🏗️ Architecture`](#️-architecture) &nbsp;`·`&nbsp; [`🧬 OOP`](#-oop-concepts) &nbsp;`·`&nbsp; [`🗄️ Database`](#️-database-schema) &nbsp;`·`&nbsp; [`🔌 API`](#-api-reference) &nbsp;`·`&nbsp; [`🖥️ Pages`](#️-pages)
+[`Team`](#team) &nbsp;`·`&nbsp; [`Setup`](#setup) &nbsp;`·`&nbsp; [`Architecture`](#architecture) &nbsp;`·`&nbsp; [`OOP Concepts`](#oop-concepts) &nbsp;`·`&nbsp; [`Database`](#database-schema) &nbsp;`·`&nbsp; [`API`](#api-reference) &nbsp;`·`&nbsp; [`Pages`](#pages)
 
 </div>
 
 ---
 
-## <img src="https://img.shields.io/badge/◈%20%20TEAM-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="-team"></a>
+<a name="team"></a>
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=200&lines=TEAM)](https://git.io/typing-svg)
 
 > **6 engineers · 6 branches · one platform**
 
@@ -56,7 +57,8 @@
 
 ---
 
-## <img src="https://img.shields.io/badge/◈%20%20SETUP-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="️-setup"></a>
+<a name="setup"></a>
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=200&lines=SETUP)](https://git.io/typing-svg)
 
 ```bash
 # 01 — clone
@@ -84,13 +86,14 @@ INSERT INTO users (name, email, password, role)
 VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 ```
 
-> 🔑 Generate hash → [bcrypt.online](https://bcrypt.online) &nbsp;·&nbsp; 🗄️ Tables auto-created by Hibernate on first boot
+> Generate hash → [bcrypt.online](https://bcrypt.online) &nbsp;·&nbsp; Tables auto-created by Hibernate on first boot
 
 **Then open →** `http://localhost:8080`
 
 ---
 
-## <img src="https://img.shields.io/badge/◈%20%20ARCHITECTURE-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="️-architecture"></a>
+<a name="architecture"></a>
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=300&lines=ARCHITECTURE)](https://git.io/typing-svg)
 
 > Strict layered separation — each layer communicates only with its immediate neighbour.
 
@@ -100,7 +103,8 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## <img src="https://img.shields.io/badge/◈%20%20OOP%20CONCEPTS-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="-oop-concepts"></a>
+<a name="oop-concepts"></a>
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=300&lines=OOP+CONCEPTS)](https://git.io/typing-svg)
 
 > OOP is worth **20 marks** — every pillar is explicitly demonstrated in the codebase.
 
@@ -118,7 +122,8 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## <img src="https://img.shields.io/badge/◈%20%20DATABASE%20SCHEMA-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="️-database-schema"></a>
+<a name="database-schema"></a>
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=350&lines=DATABASE+SCHEMA)](https://git.io/typing-svg)
 
 <div align="center">
   <img src="docs/autolane_database_schema.svg" width="70%"/>
@@ -126,7 +131,8 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## <img src="https://img.shields.io/badge/◈%20%20API%20REFERENCE-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="-api-reference"></a>
+<a name="api-reference"></a>
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=300&lines=API+REFERENCE)](https://git.io/typing-svg)
 
 **`PUBLIC`** — no auth required
 
@@ -157,17 +163,18 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## <img src="https://img.shields.io/badge/◈%20%20PAGES-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="️-pages"></a>
+<a name="pages"></a>
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=200&lines=PAGES)](https://git.io/typing-svg)
 
 | Route | Page | Access |
 |-------|------|:------:|
-| `/` | 🏠 Home — browse & search all listings | `PUBLIC` |
-| `/car-detail?id=` | 🚗 Car Detail — full listing with image | `PUBLIC` |
-| `/register` | 📝 Register — create seller account | `PUBLIC` |
-| `/login` | 🔐 Login — auto-redirects by role on success | `PUBLIC` |
-| `/seller-dashboard` | 📊 Seller Dashboard — listings, stats, actions | `SELLER` |
-| `/add-car` · `/edit-car?id=` | ➕✏️ Add / Edit Car — form + drag-and-drop image upload | `SELLER` |
-| `/admin-dashboard` | 🛡️ Admin Dashboard — platform-wide management | `ADMIN` |
+| `/` | Home — browse & search all listings | `PUBLIC` |
+| `/car-detail?id=` | Car Detail — full listing with image | `PUBLIC` |
+| `/register` | Register — create seller account | `PUBLIC` |
+| `/login` | Login — auto-redirects by role on success | `PUBLIC` |
+| `/seller-dashboard` | Seller Dashboard — listings, stats, actions | `SELLER` |
+| `/add-car` · `/edit-car?id=` | Add / Edit Car — form + drag-and-drop image upload | `SELLER` |
+| `/admin-dashboard` | Admin Dashboard — platform-wide management | `ADMIN` |
 
 ---
 
@@ -176,6 +183,6 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 <img src="https://img.shields.io/badge/SE1020-Object_Oriented_Programming-a1b800?style=for-the-badge&labelColor=111111"/>
 
 <br/><br/>
-<sub>☕ Java &nbsp;`·`&nbsp; 🌱 Spring Boot &nbsp;`·`&nbsp; 🗄️ MySQL &nbsp;`·`&nbsp; ⚡ Vanilla JS &nbsp;`·`&nbsp; Group 149</sub>
+<sub>Java &nbsp;·&nbsp; Spring Boot &nbsp;·&nbsp; MySQL &nbsp;·&nbsp; Vanilla JS &nbsp;·&nbsp; Group 149</sub>
 
 </div>
