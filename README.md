@@ -95,7 +95,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 > Strict layered separation — each layer communicates only with its immediate neighbour.
 
 <div align="center">
-  <img src="docs/autolane_architecture.svg" width="85%"/>
+  <img src="docs/autolane_architecture.svg" width="50%"/>
 </div>
 
 ---
@@ -105,7 +105,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 > OOP is worth **20 marks** — every pillar is explicitly demonstrated in the codebase.
 
 <div align="center">
-  <img src="docs/autolane_oop_concepts.svg" width="85%"/>
+  <img src="docs/autolane_oop_concepts.svg" width="70%"/>
 </div>
 
 | Pillar | Where it lives |
