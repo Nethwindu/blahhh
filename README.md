@@ -90,7 +90,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## 🏗️ Architecture
+## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=3000&pause=3000&color=A1B800&width=435&lines=Architecture)](https://git.io/typing-svg)
 
 > Strict layered separation — each layer communicates only with its immediate neighbour.
 
