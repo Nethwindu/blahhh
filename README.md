@@ -21,10 +21,10 @@
   <img src="https://img.shields.io/badge/Auth-Session_Based-DFFF00?style=flat-square&labelColor=111111"/>
   <img src="https://img.shields.io/badge/Frontend-Vanilla_JS_+_Bootstrap_5-DFFF00?style=flat-square&labelColor=111111"/>
   <img src="https://img.shields.io/badge/ORM-Spring_Data_JPA-DFFF00?style=flat-square&labelColor=111111"/>
-  <img src="https://img.shields.io/badge/Status-Active-DFFF00?style=flat-square&labelColor=111111"/>
+  <!--<img src="https://img.shields.io/badge/Status-Active-DFFF00?style=flat-square&labelColor=111111"/>-->
 </p>
 
-*A full-stack second-hand car marketplace built to demonstrate core OOP principles -*
+*A full-stack second-hand car marketplace built to demonstrate core OOP principles —*
 *role-based access, image uploads, clean layered architecture, and a decoupled Vanilla JS frontend.*
 
 </div>
@@ -46,6 +46,8 @@
 
 > **6 engineers · 6 branches · one platform**
 
+<div align="center">
+
 | `#` | Student ID | Name | Domain | Branch |
 |:---:|:----------:|------|--------|--------|
 | `01` | `IT25102440` | **Nethwindu** &nbsp;`LEAD` | Models · Security · Home | `main` |
@@ -55,19 +57,21 @@
 | `05` | `IT25100476` | **Chalinda** | Seller Controller · Dashboard · Add · Edit | `feature/seller-controller` |
 | `06` | `IT25200167` | **Nadee** | Admin Controller · Admin Dashboard | `feature/admin-controller` |
 
+</div>
+
 ---
 
 <a name="setup"></a>
 [![](https://readme-typing-svg.demolab.com?font=Kanit&size=30&duration=1&pause=3000&color=DFFF00&width=200&lines=SETUP)](https://git.io/typing-svg)
 
 ```bash
-# 01 - clone
+# 01 — clone
 git clone https://github.com/IT25102440/AutoLane.git && cd AutoLane
 
-# 02 - create the database
+# 02 — create the database
 mysql -u root -p -e "CREATE DATABASE carplatform;"
 
-# 03 - run
+# 03 — run
 ./mvnw spring-boot:run
 ```
 
@@ -79,7 +83,7 @@ spring.datasource.username  = root
 spring.datasource.password  = YOUR_PASSWORD
 ```
 
-**Seed an admin account** - admins cannot self-register
+**Seed an admin account** — admins cannot self-register
 
 ```sql
 INSERT INTO users (name, email, password, role)
@@ -95,7 +99,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 <a name="architecture"></a>
 [![](https://readme-typing-svg.demolab.com?font=Kanit&size=30&duration=1&pause=3000&color=DFFF00&width=300&lines=ARCHITECTURE)](https://git.io/typing-svg)
 
-> Strict layered separation - each layer communicates only with its immediate neighbour.
+> Strict layered separation — each layer communicates only with its immediate neighbour.
 
 <div align="center">
   <img src="docs/autolane_architecture.svg" width="60%"/>
@@ -106,19 +110,23 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 <a name="oop-concepts"></a>
 [![](https://readme-typing-svg.demolab.com?font=Kanit&size=30&duration=1&pause=3000&color=DFFF00&width=300&lines=OOP+CONCEPTS)](https://git.io/typing-svg)
 
-> OOP is worth **20 marks** - every pillar is explicitly demonstrated in the codebase.
+> OOP is worth **20 marks** — every pillar is explicitly demonstrated in the codebase.
 
 <div align="center">
   <img src="docs/autolane_oop_concepts.svg" width="70%"/>
 </div>
 
+<div align="center">
+
 | Pillar | Where it lives |
 |--------|----------------|
-| **Encapsulation** | All entity fields `private` - exposed only via Lombok `@Getter` / `@Setter` |
+| **Encapsulation** | All entity fields `private` — exposed only via Lombok `@Getter` / `@Setter` |
 | **Inheritance** | `Seller` and `Admin` extend abstract `User`, inheriting `id · name · email · password` |
-| **Polymorphism** | `getDashboard()` overridden per subclass - correct version invoked at runtime |
+| **Polymorphism** | `getDashboard()` overridden per subclass — correct version invoked at runtime |
 | **Abstraction** | Abstract `User` · JPA repository interfaces · Service layer hides all logic from controllers |
 | **Information Hiding** | `password` marked `@JsonProperty(WRITE_ONLY)` · each layer sealed from the others |
+
+</div>
 
 ---
 
@@ -134,7 +142,9 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 <a name="api-reference"></a>
 [![](https://readme-typing-svg.demolab.com?font=Kanit&size=30&duration=1&pause=3000&color=DFFF00&width=310&lines=API+REFERENCE)](https://git.io/typing-svg)
 
-**`PUBLIC`** - no auth required
+**`PUBLIC`** — no auth required
+
+<div align="center">
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -145,7 +155,11 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 | `POST` | `/api/auth/login` | Login |
 | `GET` | `/api/auth/me` | Current user + role |
 
-**`SELLER`** - no auth required
+</div>
+
+**`SELLER`** — role: `SELLER` required
+
+<div align="center">
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -154,27 +168,37 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 | `PUT` | `/api/seller/cars/{id}` | Edit listing |
 | `DELETE` | `/api/seller/cars/{id}` | Delete listing |
 
-**`ADMIN`** - role: `ADMIN` required
+</div>
+
+**`ADMIN`** — role: `ADMIN` required
+
+<div align="center">
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET · DELETE` | `/api/admin/cars/{id}` | Manage any listing |
 | `GET · DELETE` | `/api/admin/sellers/{id}` | Manage any seller |
 
+</div>
+
 ---
 
 <a name="pages"></a>
 [![](https://readme-typing-svg.demolab.com?font=Kanit&size=30&duration=1&pause=3000&color=DFFF00&width=200&lines=PAGES)](https://git.io/typing-svg)
 
+<div align="center">
+
 | Route | Page | Access |
 |-------|------|:------:|
-| `/` | Home - browse & search all listings | `PUBLIC` |
-| `/car-detail?id=` | Car Detail - full listing with image | `PUBLIC` |
-| `/register` | Register - create seller account | `PUBLIC` |
-| `/login` | Login - auto-redirects by role on success | `PUBLIC` |
-| `/seller-dashboard` | Seller Dashboard - listings, stats, actions | `SELLER` |
-| `/add-car` · `/edit-car?id=` | Add / Edit Car - form + drag-and-drop image upload | `SELLER` |
-| `/admin-dashboard` | Admin Dashboard - platform-wide management | `ADMIN` |
+| `/` | Home — browse & search all listings | `PUBLIC` |
+| `/car-detail?id=` | Car Detail — full listing with image | `PUBLIC` |
+| `/register` | Register — create seller account | `PUBLIC` |
+| `/login` | Login — auto-redirects by role on success | `PUBLIC` |
+| `/seller-dashboard` | Seller Dashboard — listings, stats, actions | `SELLER` |
+| `/add-car` · `/edit-car?id=` | Add / Edit Car — form + drag-and-drop image upload | `SELLER` |
+| `/admin-dashboard` | Admin Dashboard — platform-wide management | `ADMIN` |
+
+</div>
 
 ---
 
