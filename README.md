@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=a1b800&text=AutoLane&reversal=false&fontColor=FFFFFF&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=60&descSize=-2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=a1b800&text=AutoLane&reversal=false&fontColor=FFFFFF&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=60&descSize=20" width="100%"/>
 
 <div align="center">
 
@@ -41,7 +41,7 @@
 
 ---
 
-## 👥 Team
+## <img src="https://img.shields.io/badge/◈%20%20TEAM-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="-team"></a>
 
 > **6 engineers · 6 branches · one platform**
 
@@ -56,7 +56,7 @@
 
 ---
 
-## ⚙️ Setup
+## <img src="https://img.shields.io/badge/◈%20%20SETUP-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="️-setup"></a>
 
 ```bash
 # 01 — clone
@@ -90,7 +90,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=3000&pause=3000&color=A1B800&width=435&lines=Architecture)](https://git.io/typing-svg)
+## <img src="https://img.shields.io/badge/◈%20%20ARCHITECTURE-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="️-architecture"></a>
 
 > Strict layered separation — each layer communicates only with its immediate neighbour.
 
@@ -100,7 +100,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## 🧬 OOP Concepts
+## <img src="https://img.shields.io/badge/◈%20%20OOP%20CONCEPTS-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="-oop-concepts"></a>
 
 > OOP is worth **20 marks** — every pillar is explicitly demonstrated in the codebase.
 
@@ -118,7 +118,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## 🗄️ Database Schema
+## <img src="https://img.shields.io/badge/◈%20%20DATABASE%20SCHEMA-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="️-database-schema"></a>
 
 <div align="center">
   <img src="docs/autolane_database_schema.svg" width="70%"/>
@@ -126,7 +126,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## 🔌 API Reference
+## <img src="https://img.shields.io/badge/◈%20%20API%20REFERENCE-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="-api-reference"></a>
 
 **`PUBLIC`** — no auth required
 
@@ -157,7 +157,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 ---
 
-## 🖥️ Pages
+## <img src="https://img.shields.io/badge/◈%20%20PAGES-111111?style=for-the-badge&labelColor=a1b800&color=111111"/> <a name="️-pages"></a>
 
 | Route | Page | Access |
 |-------|------|:------:|
