@@ -24,6 +24,16 @@
 
 ---
 
+<div align="center">
+
+### `⚡ Quick Navigation`
+
+[`🏗️ Architecture`](#️-architecture) &nbsp;·&nbsp; [`🧬 OOP Concepts`](#-oop-concepts) &nbsp;·&nbsp; [`🗄️ Database`](#️-database-schema) &nbsp;·&nbsp; [`🔌 API`](#-api-reference) &nbsp;·&nbsp; [`⚙️ Setup`](#️-setup) &nbsp;·&nbsp; [`🖥️ Pages`](#️-pages) &nbsp;·&nbsp; [`👥 Team`](#-team)
+
+</div>
+
+---
+
 ## 🏗️ Architecture
 
 ```
