@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&height=250&color=0:0a0a0a,60:1c2600,100:DFFF00&text=AutoLane&reversal=false&fontColor=DFFF00&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=60&descSize=-2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=250&color=0:0a0a0a,60:1c2600,100:DFFF00&text=AutoLane&reversal=false&fontColor=FFFFF&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=60&descSize=-2" width="100%"/>
 
 <div align="center">
 
