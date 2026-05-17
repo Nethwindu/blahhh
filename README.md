@@ -16,12 +16,12 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/SE1020-OOP_Project-a1b800?style=flat-square&labelColor=111111"/>
-  <img src="https://img.shields.io/badge/Architecture-Layered_REST_API-a1b800?style=flat-square&labelColor=111111"/>
-  <img src="https://img.shields.io/badge/Auth-Session_Based-a1b800?style=flat-square&labelColor=111111"/>
-  <img src="https://img.shields.io/badge/Frontend-Vanilla_JS_+_Bootstrap_5-a1b800?style=flat-square&labelColor=111111"/>
-  <img src="https://img.shields.io/badge/ORM-Spring_Data_JPA-a1b800?style=flat-square&labelColor=111111"/>
-  <img src="https://img.shields.io/badge/Status-Active-a1b800?style=flat-square&labelColor=111111"/>
+  <img src="https://img.shields.io/badge/SE1020-OOP_Project-DFFF00?style=flat-square&labelColor=111111&logoColor=111111"/>
+  <img src="https://img.shields.io/badge/Architecture-Layered_REST_API-DFFF00?style=flat-square&labelColor=111111"/>
+  <img src="https://img.shields.io/badge/Auth-Session_Based-DFFF00?style=flat-square&labelColor=111111"/>
+  <img src="https://img.shields.io/badge/Frontend-Vanilla_JS_+_Bootstrap_5-DFFF00?style=flat-square&labelColor=111111"/>
+  <img src="https://img.shields.io/badge/ORM-Spring_Data_JPA-DFFF00?style=flat-square&labelColor=111111"/>
+  <img src="https://img.shields.io/badge/Status-Active-DFFF00?style=flat-square&labelColor=111111"/>
 </p>
 
 *A full-stack second-hand car marketplace built to demonstrate core OOP principles —*
@@ -145,7 +145,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 | `POST` | `/api/auth/login` | Login |
 | `GET` | `/api/auth/me` | Current user + role |
 
-**`SELLER`** — role: `SELLER` required
+**`SELLER`** — no auth required
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -180,7 +180,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/SE1020-Object_Oriented_Programming-a1b800?style=for-the-badge&labelColor=111111"/>
+<img src="https://img.shields.io/badge/SE1020-Object_Oriented_Programming-DFFF00?style=for-the-badge&labelColor=111111"/>
 
 <br/><br/>
 <sub>Java &nbsp;·&nbsp; Spring Boot &nbsp;·&nbsp; MySQL &nbsp;·&nbsp; Vanilla JS &nbsp;·&nbsp; Group 149</sub>
