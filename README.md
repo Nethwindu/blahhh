@@ -38,14 +38,14 @@
 
 > **6 engineers · 6 branches · one platform**
 
-| `#` | Engineer | Domain | Branch |
-|:---:|----------|--------|--------|
-| `01` | **Nethwindu** &nbsp;`LEAD` | Models · Security · Home | `main` |
-| `02` | **Chanuki** | Car Repository · Service · Detail page | `feature/car-model-and-service` |
-| `03` | **Resandu** | User Repository · Service · Register page | `feature/user-repository-and-service` |
-| `04` | **Nilanga** | Auth · Home · Page Controllers · Login | `feature/auth-and-home-controller` |
-| `05` | **Chalinda** | Seller Controller · Dashboard · Add · Edit | `feature/seller-controller` |
-| `06` | **Nadee** | Admin Controller · Admin Dashboard | `feature/admin-controller` |
+| `#` | Student ID | Engineer | Domain | Branch |
+|:---:|:----------:|----------|--------|--------|
+| `01` | `IT25102440` | **Nethwindu** &nbsp;`LEAD` | Models · Security · Home | `main` |
+| `02` | `IT25101445` | **Chanuki** | Car Repository · Service · Detail page | `feature/car-model-and-service` |
+| `03` | `IT25101707` | **Resandu** | User Repository · Service · Register page | `feature/user-repository-and-service` |
+| `04` | `IT25103697` | **Nilanga** | Auth · Home · Page Controllers · Login | `feature/auth-and-home-controller` |
+| `05` | `IT25100476` | **Chalinda** | Seller Controller · Dashboard · Add · Edit | `feature/seller-controller` |
+| `06` | `IT25200167` | **Nadee** | Admin Controller · Admin Dashboard | `feature/admin-controller` |
 
 ---
 
