@@ -26,15 +26,66 @@
 
 <div align="center">
 
-### `⚡ Quick Navigation`
+### `// navigate`
 
-[`🏗️ Architecture`](#️-architecture) &nbsp;·&nbsp; [`🧬 OOP Concepts`](#-oop-concepts) &nbsp;·&nbsp; [`🗄️ Database`](#️-database-schema) &nbsp;·&nbsp; [`🔌 API`](#-api-reference) &nbsp;·&nbsp; [`⚙️ Setup`](#️-setup) &nbsp;·&nbsp; [`🖥️ Pages`](#️-pages) &nbsp;·&nbsp; [`👥 Team`](#-team)
+[`👥 Team`](#-team) &nbsp;`·`&nbsp; [`⚙️ Setup`](#️-setup) &nbsp;`·`&nbsp; [`🏗️ Architecture`](#️-architecture) &nbsp;`·`&nbsp; [`🧬 OOP`](#-oop-concepts) &nbsp;`·`&nbsp; [`🗄️ Database`](#️-database-schema) &nbsp;`·`&nbsp; [`🔌 API`](#-api-reference) &nbsp;`·`&nbsp; [`🖥️ Pages`](#️-pages)
 
 </div>
 
 ---
 
+## 👥 Team
+
+> **6 engineers · 6 branches · one platform**
+
+| `#` | Engineer | Domain | Branch |
+|:---:|----------|--------|--------|
+| `01` | **Nethwindu** &nbsp;`LEAD` | Models · Security · Home | `main` |
+| `02` | **Chanuki** | Car Repository · Service · Detail page | `feature/car-model-and-service` |
+| `03` | **Resandu** | User Repository · Service · Register page | `feature/user-repository-and-service` |
+| `04` | **Nilanga** | Auth · Home · Page Controllers · Login | `feature/auth-and-home-controller` |
+| `05` | **Chalinda** | Seller Controller · Dashboard · Add · Edit | `feature/seller-controller` |
+| `06` | **Nadee** | Admin Controller · Admin Dashboard | `feature/admin-controller` |
+
+---
+
+## ⚙️ Setup
+
+```bash
+# 01 — clone
+git clone https://github.com/IT25102440/AutoLane.git && cd AutoLane
+
+# 02 — create the database
+mysql -u root -p -e "CREATE DATABASE carplatform;"
+
+# 03 — run
+./mvnw spring-boot:run
+```
+
+**Configure** `src/main/resources/application.properties`
+
+```properties
+spring.datasource.url       = jdbc:mysql://localhost:3306/carplatform
+spring.datasource.username  = root
+spring.datasource.password  = YOUR_PASSWORD
+```
+
+**Seed an admin account** — admins cannot self-register
+
+```sql
+INSERT INTO users (name, email, password, role)
+VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
+```
+
+> Generate hash → [bcrypt.online](https://bcrypt.online) &nbsp;·&nbsp; Tables auto-created by Hibernate on first boot
+
+**Then open →** `http://localhost:8080`
+
+---
+
 ## 🏗️ Architecture
+
+> Strict layered separation — each layer communicates only with its immediate neighbour.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -95,13 +146,13 @@
    └────────────────────────┘   └──────────────────────────┘
 ```
 
-| Concept | Implementation |
-|---|---|
-| **Encapsulation** | All entity fields `private` — access via Lombok getters/setters only |
-| **Inheritance** | `Seller` and `Admin` extend abstract `User`, inheriting shared fields |
-| **Polymorphism** | `getDashboard()` overridden per subclass — correct version called at runtime |
-| **Abstraction** | Abstract `User` · JPA repository interfaces · Service hides logic from controllers |
-| **Information Hiding** | Passwords `@JsonProperty(WRITE_ONLY)` · each layer isolated from others |
+| Pillar | Where it lives |
+|--------|---------------|
+| **Encapsulation** | All entity fields `private` — access via Lombok `@Getter` / `@Setter` only |
+| **Inheritance** | `Seller` and `Admin` extend abstract `User`, inheriting id · name · email · password |
+| **Polymorphism** | `getDashboard()` overridden per subclass — correct version invoked at runtime |
+| **Abstraction** | Abstract `User` · JPA interfaces · Service layer hides all logic from controllers |
+| **Information Hiding** | `password` is `@JsonProperty(WRITE_ONLY)` · each layer sealed from the others |
 
 ---
 
@@ -119,17 +170,17 @@
 │            ↑ discriminator col   │   │   │  mileage     INT                  │
 └──────────────────────────────────┘   │   │  location    VARCHAR(150)         │
                                        │   │  image_path  VARCHAR(255)         │
-  Single-Table Inheritance:            └───┤  seller_id   INT  FK              │
-  SELLER + ADMIN share one table          └──────────────────────────────────┘
+  Single-Table Inheritance —           └───┤  seller_id   INT  FK              │
+  SELLER + ADMIN share one table,         └──────────────────────────────────┘
   differentiated by the role column
-                                          Relationship:  One Seller → Many Cars
+                                          Cardinality:  One Seller → Many Cars
 ```
 
 ---
 
 ## 🔌 API Reference
 
-**🌐 Public**
+**`PUBLIC`** — no auth required
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -140,7 +191,7 @@
 | `POST` | `/api/auth/login` | Login |
 | `GET` | `/api/auth/me` | Current user + role |
 
-**🏪 Seller** *(role: `SELLER`)*
+**`SELLER`** — role: `SELLER` required
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -149,73 +200,26 @@
 | `PUT` | `/api/seller/cars/{id}` | Edit listing |
 | `DELETE` | `/api/seller/cars/{id}` | Delete listing |
 
-**🔑 Admin** *(role: `ADMIN`)*
+**`ADMIN`** — role: `ADMIN` required
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET / DELETE` | `/api/admin/cars/{id}` | Manage any listing |
-| `GET / DELETE` | `/api/admin/sellers/{id}` | Manage any seller |
-
----
-
-## ⚙️ Setup
-
-**1 — Clone**
-```bash
-git clone https://github.com/IT25102440/AutoLane.git && cd AutoLane
-```
-
-**2 — Create the database**
-```sql
-CREATE DATABASE carplatform;
-```
-
-**3 — Configure** `src/main/resources/application.properties`
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/carplatform
-spring.datasource.username=root
-spring.datasource.password=YOUR_PASSWORD
-```
-
-**4 — Seed an admin** *(admins cannot self-register)*
-```sql
-INSERT INTO users (name, email, password, role)
-VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
-```
-> Generate a BCrypt hash → [bcrypt.online](https://bcrypt.online)
-
-**5 — Run**
-```bash
-./mvnw spring-boot:run
-```
-Then open → **`http://localhost:8080`**
+| `GET · DELETE` | `/api/admin/cars/{id}` | Manage any listing |
+| `GET · DELETE` | `/api/admin/sellers/{id}` | Manage any seller |
 
 ---
 
 ## 🖥️ Pages
 
-| Page | Route | Access |
-|------|--------|--------|
-| 🏠 Home | `/` | Public |
-| 🚗 Car Detail | `/car-detail?id=` | Public |
-| 📝 Register | `/register` | Public |
-| 🔐 Login | `/login` | Public |
-| 📊 Seller Dashboard | `/seller-dashboard` | SELLER |
-| ➕ Add / ✏️ Edit Car | `/add-car` · `/edit-car?id=` | SELLER |
-| 🛡️ Admin Dashboard | `/admin-dashboard` | ADMIN |
-
----
-
-## 👥 Team
-
-| # | Name | Responsibility | Branch |
-|---|------|---------------|--------|
-| 1 | **Nethwindu** *(Lead)* | Models · Security · Home page | `main` |
-| 2 | **Chanuki** | CarRepository · CarService · Car Detail | `feature/car-model-and-service` |
-| 3 | **Resandu** | UserRepository · UserService · Register | `feature/user-repository-and-service` |
-| 4 | **Nilanga** | Auth / Home / Page Controllers · Login | `feature/auth-and-home-controller` |
-| 5 | **Chalinda** | SellerController · Seller / Add / Edit pages | `feature/seller-controller` |
-| 6 | **Nadee** | AdminController · Admin Dashboard | `feature/admin-controller` |
+| Route | Page | Access |
+|-------|------|:------:|
+| `/` | 🏠 Home — browse & search all listings | `PUBLIC` |
+| `/car-detail?id=` | 🚗 Car Detail — full listing with image | `PUBLIC` |
+| `/register` | 📝 Register — create seller account | `PUBLIC` |
+| `/login` | 🔐 Login — auto-redirects by role on success | `PUBLIC` |
+| `/seller-dashboard` | 📊 Seller Dashboard — listings, stats, actions | `SELLER` |
+| `/add-car` · `/edit-car?id=` | ➕✏️ Add / Edit Car — listing form + image upload | `SELLER` |
+| `/admin-dashboard` | 🛡️ Admin Dashboard — platform-wide management | `ADMIN` |
 
 ---
 
@@ -224,6 +228,6 @@ Then open → **`http://localhost:8080`**
 <img src="https://img.shields.io/badge/SE1020-Object_Oriented_Programming-a1b800?style=for-the-badge&labelColor=111111"/>
 
 <br/><br/>
-<sub>Built with ☕ Java · 🌱 Spring Boot · 🗄️ MySQL &nbsp;|&nbsp; Group 6</sub>
+<sub>☕ Java &nbsp;·&nbsp; 🌱 Spring Boot &nbsp;·&nbsp; 🗄️ MySQL &nbsp;·&nbsp; Group 6</sub>
 
 </div>
