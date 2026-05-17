@@ -21,7 +21,7 @@
   <img src="https://img.shields.io/badge/Auth-Session_Based-a1b800?style=flat-square&labelColor=111111"/>
   <img src="https://img.shields.io/badge/Frontend-Vanilla_JS_+_Bootstrap_5-a1b800?style=flat-square&labelColor=111111"/>
   <img src="https://img.shields.io/badge/ORM-Spring_Data_JPA-a1b800?style=flat-square&labelColor=111111"/>
-  <img src="https://img.shields.io/badge/Status-Active-a1b800?style=flat-square&labelColor=111111"/>
+  /*<img src="https://img.shields.io/badge/Status-Active-a1b800?style=flat-square&labelColor=111111"/>*/
 </p>
 
 *A full-stack second-hand car marketplace built to demonstrate core OOP principles —*
