@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=&color=a1b800&text=AutoLane&reversal=false&fontColor=FFFFFF&descAlign=50&descAlignY=100" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=&color=a1b800&text=AutoLane&reversal=false&fontColor=FFFFFF&desc=Second-hand%20Car%20Sales&descAlign=50&descAlignY=60" width="100%"/>
 
 
 <p>
