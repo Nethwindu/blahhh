@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=a1b800&text=AutoLane&reversal=false&fontColor=FFFFFF&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=60&descSize=-2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=330&color=&color=a1b800&text=AutoLane&reversal=false&fontColor=FFFFFF&desc=SECOND%20HAND%20CAR%20SALES&descAlign=50&descAlignY=60&descSize=-2&fontSize=100" width="100%"/>
 
 <div align="center">
 
@@ -42,7 +42,7 @@
 ---
 
 <a name="team"></a>
-[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=200&lines=TEAM)](https://git.io/typing-svg)
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=DFFF00&width=200&lines=TEAM)](https://git.io/typing-svg)
 
 > **6 engineers · 6 branches · one platform**
 
@@ -58,7 +58,7 @@
 ---
 
 <a name="setup"></a>
-[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=200&lines=SETUP)](https://git.io/typing-svg)
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=DFFF00&width=200&lines=SETUP)](https://git.io/typing-svg)
 
 ```bash
 # 01 — clone
@@ -93,7 +93,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 ---
 
 <a name="architecture"></a>
-[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=300&lines=ARCHITECTURE)](https://git.io/typing-svg)
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=DFFF00&width=300&lines=ARCHITECTURE)](https://git.io/typing-svg)
 
 > Strict layered separation — each layer communicates only with its immediate neighbour.
 
@@ -104,7 +104,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 ---
 
 <a name="oop-concepts"></a>
-[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=300&lines=OOP+CONCEPTS)](https://git.io/typing-svg)
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=DFFF00&width=300&lines=OOP+CONCEPTS)](https://git.io/typing-svg)
 
 > OOP is worth **20 marks** — every pillar is explicitly demonstrated in the codebase.
 
@@ -123,7 +123,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 ---
 
 <a name="database-schema"></a>
-[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=350&lines=DATABASE+SCHEMA)](https://git.io/typing-svg)
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=DFFF00&width=350&lines=DATABASE+SCHEMA)](https://git.io/typing-svg)
 
 <div align="center">
   <img src="docs/autolane_database_schema.svg" width="70%"/>
@@ -132,7 +132,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 ---
 
 <a name="api-reference"></a>
-[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=300&lines=API+REFERENCE)](https://git.io/typing-svg)
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=DFFF00&width=300&lines=API+REFERENCE)](https://git.io/typing-svg)
 
 **`PUBLIC`** — no auth required
 
@@ -164,7 +164,7 @@ VALUES ('Admin', 'admin@autolane.lk', '$2a$10$YOUR_BCRYPT_HASH', 'ADMIN');
 ---
 
 <a name="pages"></a>
-[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=a1b800&width=200&lines=PAGES)](https://git.io/typing-svg)
+[![](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=30&duration=1&pause=3000&color=DFFF00&width=200&lines=PAGES)](https://git.io/typing-svg)
 
 | Route | Page | Access |
 |-------|------|:------:|
